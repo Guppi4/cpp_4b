@@ -14,6 +14,7 @@ namespace coup
     {
     public:
         string _n;
+        
         string topCommand;
         int bank;
         Game *_g;
@@ -21,7 +22,7 @@ namespace coup
         Player(Game& g, string n);
         
         ~Player();
-        static int coins();
+        int coins();
         void income();
         void foreign_aid();
         

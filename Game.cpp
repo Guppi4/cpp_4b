@@ -10,7 +10,8 @@ using namespace std;
     Game::~Game() {}
     string Game::turn()
     {
-        string top=this->player.at(0);
+        string top=this->player[0];
+        
         return top;
     }
    
@@ -21,7 +22,14 @@ using namespace std;
      
         return  v;
     }
-    
+    void Game::turn2()
+    {
+         string name = this->player.at(0);
+         player.erase(player.begin());
+         this->player.push_back(name);
+        
+       
+    }
     string Game::winner()
     {
         return "winner";
