@@ -11,7 +11,7 @@ namespace coup
     {
     public:
         
-        Contessa(Game g,string name): Player(g,name){}
+        Contessa(Game &g,string name): Player(g,name){}
         ~Contessa();
         void block(const Player &p);
     };

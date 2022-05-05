@@ -11,7 +11,7 @@ namespace coup
     {
     public:
         
-        Duke(Game g,string name) : Player(g,name){}
+        Duke(Game &g,string name) : Player(g,name){}
         ~Duke();
         void block(const Player &p);
         void tax();

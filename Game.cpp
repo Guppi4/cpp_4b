@@ -10,16 +10,24 @@ using namespace std;
     Game::~Game() {}
     string Game::turn()
     {
-        return "this";
+        string top=this->player.at(0);
+        return top;
     }
    
     vector<string> Game::players()
     {
-         vector<string> v;
-        return v;
+         //cout <<this->player.at(0);
+         vector<string> v=this->player;
+     
+        return  v;
     }
     
     string Game::winner()
     {
         return "winner";
+    }
+   void coup::Game::push_to_game(string s){
+      
+       this->player.push_back(s); 
+       // cout << this->player.back();
     }

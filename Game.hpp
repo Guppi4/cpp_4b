@@ -7,15 +7,16 @@
 using namespace std;
 namespace coup
 {
+    class Player;
     class Game
     {
     public:
-        static vector<string> player;
+        vector<string> player;
         Game();
         ~Game();
-       // static void push_to_game(string s);
-        static string turn();
-        static vector<string> players();
-        static string winner();
+        void push_to_game(string s);
+        string turn();
+        vector<string> players();
+         string winner();
     };
 }

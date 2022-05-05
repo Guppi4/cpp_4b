@@ -9,14 +9,16 @@ using namespace std;
 
 namespace coup
 {
+    class Game;
     class Player
     {
     public:
         string _n;
+        string topCommand;
         int bank;
-        Game _g;
+        Game *_g;
         
-        Player(Game const& g, string const& n);
+        Player(Game& g, string n);
         
         ~Player();
         static int coins();
