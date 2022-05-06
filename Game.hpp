@@ -12,6 +12,7 @@ namespace coup
     {
     public:
         string q;
+        string removed_player;
         vector<string> player;
         Game();
         ~Game();
@@ -20,5 +21,6 @@ namespace coup
         void turn2();
         vector<string> players();
          string winner();
+         void removePlayer(Player &p);
     };
 }

@@ -6,4 +6,11 @@ using namespace coup;
 using namespace std;
 
 coup::Assassin::~Assassin() {}
-void coup::Assassin::coup(const Player &p) {}
+void coup::Assassin::coup( Player &p) {
+   if(this->bank<3){
+            throw runtime_error("no money\n");
+        }
+    _g->removePlayer(p);
+    this->topCommand="coup";
+    
+}

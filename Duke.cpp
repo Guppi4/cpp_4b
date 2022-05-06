@@ -7,5 +7,10 @@ using namespace std;
 
 
 coup::Duke::~Duke() {}
-void coup::Duke::tax() {}
-void coup::Duke::block(const Player &p) {}
+void coup::Duke::tax() {
+     _g->turn2();
+}
+void coup::Duke::block( Player &p) {
+    this->topCommand="block";
+    p.bank+=-2;
+}

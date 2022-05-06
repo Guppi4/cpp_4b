@@ -13,6 +13,6 @@ namespace coup
        
         Assassin(Game &g,string name): Player(g,name){};
         ~Assassin();
-        void coup(const Player &p);
+        void coup( Player &p);
     };
 }

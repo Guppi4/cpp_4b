@@ -120,6 +120,7 @@ int main() {
 
 	contessa.block(assassin);
 
+	
 	players = game_1.players();
 	/*
 		prints:
@@ -129,8 +130,9 @@ int main() {
 		Reut
 		Gilad
 	*/
+	cout <<"\n";
 	for (string name : players)
 	{
-		cout << name << endl;
-	}
+	 	cout << name << endl;
+	 }
 }

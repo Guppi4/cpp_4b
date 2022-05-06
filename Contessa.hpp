@@ -13,6 +13,6 @@ namespace coup
         
         Contessa(Game &g,string name): Player(g,name){}
         ~Contessa();
-        void block(const Player &p);
+        void block(Player &p);
     };
 }

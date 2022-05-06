@@ -2,6 +2,9 @@
 #include <stdexcept>
 #include <vector>
 #include "Game.hpp"
+#include "Player.hpp"
+#include<bits/stdc++.h>
+
 using namespace coup;
 using namespace std;
 
@@ -39,3 +42,12 @@ using namespace std;
        this->player.push_back(s); 
        // cout << this->player.back();
     }
+      void Game::removePlayer(Player &p) {
+      this->removed_player=p.getName();
+      this->player.erase(remove(this->player.begin(),this->player.end(),p.getName()),this->player.end());
+      //cout <<p.getName() << "piska";
+      //new_end = remove(this->player.begin(),this->player.end(), p.getName());
+      
+    }
+   
+    

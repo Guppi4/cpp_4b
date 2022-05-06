@@ -13,7 +13,7 @@ namespace coup
       
         Captain(Game& g,string name): Player(g,name){};
         ~Captain();
-        void steal(const Player &p);
-        void block(const Player &p);
+        void steal( Player &p);
+        void block( Player &p);
     };
 }

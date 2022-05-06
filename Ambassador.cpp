@@ -9,6 +9,11 @@ using namespace std;
 
 
 
-    coup::Ambassador::~Ambassador(){}
-    void coup::Ambassador::transfer(const Player &from,const Player &to){}
-    void coup::Ambassador::block(const Player &p){}
+    Ambassador::~Ambassador(){}
+    void Ambassador::transfer( Player &from,Player &to){
+        from.bank+=-1;
+        to.bank+=1;
+        this->topCommand="transfer";   
+        _g->turn2();
+    }
+    void Ambassador::block(const Player &p){}

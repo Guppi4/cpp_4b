@@ -13,7 +13,7 @@ namespace coup
         
         Ambassador(Game &g,string n): Player(g,n){}
         ~Ambassador();
-        void transfer(const Player &from,const Player &to);
+        void transfer( Player &from,Player &to);
         void block(const Player &p);
     };
 }

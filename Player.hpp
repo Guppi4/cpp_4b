@@ -25,6 +25,7 @@ namespace coup
         int coins();
         void income();
         void foreign_aid();
-        
+        string getName();
+        void coup(Player & p);
     };
 }
