@@ -11,9 +11,13 @@ namespace coup
     {
     public:
         
+        string clas="Ambassador";
         Ambassador(Game &g,string n): Player(g,n){}
         ~Ambassador();
         void transfer( Player &from,Player &to);
         void block(const Player &p);
+       
+        
+
     };
 }

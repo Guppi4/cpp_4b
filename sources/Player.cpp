@@ -4,9 +4,10 @@
 #include "Player.hpp"
 using namespace coup;
 using namespace std;
-
-Player::Player(Game &g, string n)
+ 
+Player::Player(Game &g,const string &n)
 {
+    
     this->_g = &g;
     this->_n = n;
     this->_g->push_to_game(n);
@@ -16,7 +17,7 @@ Player::Player(Game &g, string n)
     // g.player.push_back(n);
 }
 Player::~Player() {}
-int coup::Player::coins()
+int coup::Player::coins() const
 {
 
     return this->bank;
@@ -40,13 +41,14 @@ void coup::Player::foreign_aid()
     this->bank += 2;
     _g->turn2();
 }
-string coup::Player::getName()
+string coup::Player::getName() const
 {
     return _n;
 }
-void Player::coup(Player &p)
+void Player::coup(Player &p) const
 {
-    if (this->bank < 7)
+   
+    if (this->bank < couphh)
     {
         throw runtime_error("not player turn\n");
     }
@@ -54,4 +56,7 @@ void Player::coup(Player &p)
     _g->removePlayer(p);
 
    ///game->nextTurn();
+}
+string Player::role()const {
+    return typeid(*this).name();
 }

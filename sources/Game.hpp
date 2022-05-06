@@ -16,11 +16,11 @@ namespace coup
         vector<string> player;
         Game();
         ~Game();
-        void push_to_game(string s);
+        void push_to_game(const string &s);
         string turn();
         void turn2();
-        vector<string> players();
-         string winner();
+        vector<string> players() const;
+         string winner() const;
          void removePlayer(Player &p);
     };
 }

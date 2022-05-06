@@ -18,7 +18,7 @@ using namespace std;
         return top;
     }
    
-    vector<string> Game::players()
+    vector<string> Game::players () const
     {
          //cout <<this->player.at(0);
          vector<string> v=this->player;
@@ -33,11 +33,12 @@ using namespace std;
         
        
     }
-    string Game::winner()
+     string Game::winner() const
     {
-        return "winner";
+        
+        return this->player.at(0);
     }
-   void coup::Game::push_to_game(string s){
+   void coup::Game::push_to_game(const string &s){
       
        this->player.push_back(s); 
        // cout << this->player.back();

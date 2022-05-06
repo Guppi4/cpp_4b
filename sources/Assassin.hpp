@@ -10,9 +10,12 @@ namespace coup
     class Assassin : public Player
     {
     public:
-       
-        Assassin(Game &g,string name): Player(g,name){};
+        string clas;
+        Assassin(Game &g,string name): Player(g,name){
+             clas="Assassin";
+        };
         ~Assassin();
         void coup( Player &p);
+        
     };
 }
