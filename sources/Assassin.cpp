@@ -12,7 +12,7 @@ void coup::Assassin::coup( Player &p) {
         }
     _g->removePlayer(p);
     this->topCommand="coup";
-    
+    _g->turn2();
 }
    string Assassin::role()const {
     return "Assassin";

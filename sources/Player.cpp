@@ -4,10 +4,13 @@
 #include "Player.hpp"
 using namespace coup;
 using namespace std;
- 
+ const int MIN_G=2;
+ const int MAX_G=6;
 Player::Player(Game &g,const string &n)
 {
-    
+    if(g.player.size()>=MAX_G){
+         throw std::runtime_error("no space");
+    }
     this->_g = &g;
     this->_n = n;
     this->_g->push_to_game(n);
@@ -24,7 +27,11 @@ int coup::Player::coins() const
 }
 void coup::Player::income()
 {
-
+     if (this->_g->player.size()<MIN_G || this->_g->player.size()>MAX_G)
+    {
+        throw std::runtime_error("not turn");
+    }
+    
     // cout << this->_n <<"_" <<this->_g->turn() <<"\n" ;
     if (this->_n != this->_g->turn())
     {
@@ -37,6 +44,15 @@ void coup::Player::income()
 
 void coup::Player::foreign_aid()
 {
+     
+      if (this->_g->player.size()<MIN_G || this->_g->player.size()>MAX_G)
+    {
+        throw std::runtime_error("not turn");
+    }
+      if (this->_n != this->_g->turn())
+    {
+        throw std::runtime_error("not turn");
+    }
     this->topCommand = "foreign_aid";
     this->bank += 2;
     _g->turn2();
