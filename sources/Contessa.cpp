@@ -19,3 +19,6 @@ using namespace std;
          // cout<< p.getName();
         
     }
+     string Contessa::role()const {
+    return "Contessa";
+}

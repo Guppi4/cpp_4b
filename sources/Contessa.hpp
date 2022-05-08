@@ -14,5 +14,6 @@ namespace coup
         Contessa(Game &g,string name): Player(g,name){}
         ~Contessa();
         void block(Player &p);
+        string role()const;
     };
 }

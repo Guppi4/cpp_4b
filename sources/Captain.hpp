@@ -15,5 +15,6 @@ namespace coup
         ~Captain();
         void steal( Player &p);
         void block( Player &p);
+         string role()const;
     };
 }

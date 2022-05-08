@@ -19,3 +19,6 @@ using namespace std;
         }
     }
     void coup::Captain::block(Player &p){}
+   string Captain::role()const {
+    return "Captain";
+}

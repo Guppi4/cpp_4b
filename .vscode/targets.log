@@ -1,0 +1,481 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: *** No rule to make target 'all'.  Stop.
+
+# GNU Make 4.3
+ 
+# Built for x86_64-pc-linux-gnu
+ 
+# Copyright (C) 1988-2020 Free Software Foundation, Inc.
+ 
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+ 
+# This is free software: you are free to change and redistribute it.
+ 
+# There is NO WARRANTY, to the extent permitted by law.
+ 
+
+ 
+# Make data base, printed on Sun May  8 21:47:01 2022
+ 
+
+# Variables
+ 
+
+ 
+# environment
+ 
+GDK_BACKEND = x11
+ 
+# environment
+ 
+LC_ALL = C
+ 
+# environment
+ 
+GNOME_SHELL_SESSION_MODE = ubuntu
+ 
+# environment
+SSH_AGENT_LAUNCHER = gnome-keyring
+# environment
+SNAP_INSTANCE_KEY = 
+# environment
+GJS_DEBUG_OUTPUT = stderr
+# environment
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-f1bebd52-bed8-4108-9657-41e80e028e38.sock
+# environment
+VSCODE_CWD = /home/kirill
+# default
+MAKE_COMMAND := make
+# environment
+QT_ACCESSIBILITY = 1
+# makefile (from 'Makefile', line 10)
+TIDY_FLAGS = -extra-arg=-std=$(CXXVERSION) -checks=bugprone-*,clang-analyzer-*,cppcoreguidelines-*,performance-*,portability-*,readability-*,-cppcoreguidelines-pro-bounds-pointer-arithmetic,-cppcoreguidelines-owning-memory --warnings-as-errors=*
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+SNAP_INSTANCE_NAME = code
+# environment
+GDK_PIXBUF_MODULEDIR = /snap/code/95/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
+# makefile (from 'Makefile', line 7)
+SOURCE_PATH = sources
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# default
+.VARIABLES := 
+# environment
+PWD = /home/kirill/Desktop/CPP/cpp_4b
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+XDG_DATA_DIRS = /usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+VSCODE_LOG_STACK = false
+# automatic
+%F = $(notdir $%)
+# environment
+VSCODE_CODE_CACHE_PATH = /home/kirill/.config/Code/CachedData/57fd6d0195bb9b9d1b49f6da5db789060795de47
+# environment
+LANG = C
+# environment
+XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.O844L1
+# default
+.LOADED := 
+# default
+.INCLUDE_DIRS = /usr/local/include /usr/include /usr/include
+# makefile
+MAKEFLAGS = pqrR
+# makefile (from 'Makefile', line 11)
+VALGRIND_FLAGS = -v --leak-check=full --show-leak-kinds=all  --error-exitcode=99
+# makefile
+CURDIR := /home/kirill/Desktop/CPP/cpp_4b
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# environment
+LESSOPEN = | /usr/bin/lesspipe %s
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+MFLAGS = -pqrR
+# environment
+SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
+# default
+.SHELLFLAGS := -c
+# environment
+WAYLAND_DISPLAY = wayland-0
+# environment
+XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+XDG_SESSION_DESKTOP = ubuntu
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST := Makefile
+# environment
+SNAP_REEXEC = 
+# automatic
+@F = $(notdir $@)
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+VSCODE_PID = 16587
+# environment
+XDG_SESSION_TYPE = wayland
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# environment
+BAMF_DESKTOP_FILE_HINT = /var/lib/snapd/desktop/applications/code_code.desktop
+# environment
+SESSION_MANAGER = local/kirill-VirtualBox:@/tmp/.ICE-unix/1397,unix/kirill-VirtualBox:/tmp/.ICE-unix/1397
+# automatic
+*F = $(notdir $*)
+# environment
+CHROME_DESKTOP = code-url-handler.desktop
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-gb","availableLanguages":{},"_languagePackSupport":true}
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# environment
+GNOME_DESKTOP_SESSION_ID = this-is-deprecated
+# makefile
+SHELL = /bin/sh
+# default
+MAKECMDGOALS := all
+# environment
+XMODIFIERS = @im=ibus
+# makefile (from 'Makefile', line 14)
+HEADERS = $(wildcard $(SOURCE_PATH)/*.hpp)
+# environment
+GJS_DEBUG_TOPICS = JS ERROR;JS LOG
+# environment
+SHLVL = 0
+# environment
+MAKELEVEL := 0
+# environment
+IM_CONFIG_CHECK_ENV = 1
+# default
+MAKE = $(MAKE_COMMAND)
+# environment
+SNAP_COOKIE = VYapbnRLuMpWByPxPLxm_RIx4Dbgt1U1ctIMcCm7dY54cgKISHtT
+# environment
+PATH = /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
+# default
+MAKEFILES := 
+# environment
+LANGUAGE = en_IL:en
+# automatic
+^F = $(notdir $^)
+# environment
+SNAP_USER_COMMON = /home/kirill/snap/code/common
+# environment
+SNAP = /snap/code/95
+# environment
+INVOCATION_ID = 290d1f7b1fb8446ba305d54f079d86fc
+# environment
+SNAP_REVISION = 95
+# environment
+SNAP_REAL_HOME = /home/kirill
+# environment
+VSCODE_LOG_NATIVE = false
+# environment
+USERNAME = kirill
+# environment
+GNOME_SETUP_DISPLAY = :1
+# environment
+LESSCLOSE = /usr/bin/lesspipe %s %s
+# automatic
+?F = $(notdir $?)
+# environment
+XDG_CURRENT_DESKTOP = Unity
+# environment
+LS_COLORS = 
+# automatic
++F = $(notdir $+)
+# environment
+DESKTOP_SESSION = ubuntu
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
+# makefile (from 'Makefile', line 15)
+OBJECTS = $(subst sources/,objects/,$(subst .cpp,.o,$(SOURCES)))
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+LOGNAME = kirill
+# environment
+GIO_LAUNCHED_DESKTOP_FILE = /var/lib/snapd/desktop/applications/code_code.desktop
+# environment
+SNAP_ARCH = amd64
+# makefile
+.DEFAULT_GOAL := run
+# environment
+DISPLAY = :0
+# environment
+USER = kirill
+# environment
+GTK_MODULES = gail:atk-bridge
+# default
+MAKE_VERSION := 4.3
+# environment
+DISABLE_WAYLAND = 1
+# environment
+SNAP_DATA = /var/snap/code/95
+# environment
+SNAP_CONTEXT = VYapbnRLuMpWByPxPLxm_RIx4Dbgt1U1ctIMcCm7dY54cgKISHtT
+# environment
+MANAGERPID = 1259
+# environment
+GIO_LAUNCHED_DESKTOP_FILE_PID = 16549
+# environment
+_ = /snap/code/95/usr/share/code/code
+# environment
+XDG_RUNTIME_DIR = /run/user/1000
+# environment
+GDK_PIXBUF_MODULE_FILE = /home/kirill/snap/code/common/.cache/gdk-pixbuf-loaders.cache
+# environment
+JOURNAL_STREAM = 8:22365
+# environment
+XDG_SESSION_CLASS = user
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /home/kirill
+# environment
+QT_IM_MODULE = ibus
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+VSCODE_IPC_HOOK = /run/user/1000/vscode-f029b8f5-1.67.0-main.sock
+# environment
+SNAP_NAME = code
+# environment
+GSETTINGS_SCHEMA_DIR = /snap/code/95/usr/share/glib-2.0/schemas
+# environment
+IM_CONFIG_PHASE = 1
+# default
+.RECIPEPREFIX := 
+# automatic
+<F = $(notdir $<)
+# environment
+SNAP_VERSION = 57fd6d01
+# default
+SUFFIXES := 
+# environment
+VSCODE_CLI = 1
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
+# environment
+SNAP_COMMON = /var/snap/code/common
+# makefile (from 'Makefile', line 9)
+CXXFLAGS = -std=$(CXXVERSION) -Werror -Wsign-conversion -I$(SOURCE_PATH)
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink guile load
+# makefile (from 'Makefile', line 6)
+CXXVERSION = c++2a
+# makefile (from 'Makefile', line 5)
+CXX = clang++-9
+# makefile (from 'Makefile', line 8)
+OBJECT_PATH = objects
+# makefile (from 'Makefile', line 13)
+SOURCES = $(wildcard $(SOURCE_PATH)/*.cpp)
+# environment
+SNAP_USER_DATA = /home/kirill/snap/code/95
+# environment
+XDG_MENU_PREFIX = gnome-
+# environment
+GDMSESSION = ubuntu
+# environment
+SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void
+# variable set hash-table stats:
+# Load=132/1024=13%, Rehash=0, Collisions=8/171=5%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 2051, inode 1836003): 19 files, no impossibilities.
+# sources (device 2051, inode 1859104): 18 files, no impossibilities.
+
+# 37 files, no impossibilities in 2 directories.
+
+# Implicit Rules
+
+%.o: %.cpp sources/Ambassador.hpp sources/Assassin.hpp sources/Captain.hpp sources/Contessa.hpp sources/Duke.hpp sources/Game.hpp sources/Player.hpp
+#  recipe to execute (from 'Makefile', line 23):
+	$(CXX) $(CXXFLAGS) --compile $< -o $@
+
+ 
+objects/%.o: sources/%.cpp sources/Ambassador.hpp sources/Assassin.hpp sources/Captain.hpp sources/Contessa.hpp sources/Duke.hpp sources/Game.hpp sources/Player.hpp
+ 
+#  recipe to execute (from 'Makefile', line 26):
+	$(CXX) $(CXXFLAGS) --compile $< -o $@
+
+# 2 implicit rules, 0 (0.0%) terminal.
+# Files
+
+StudentTest2.cpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 34):
+	curl https://raw.githubusercontent.com/Esther-Bi/B-HW4-Test/main/Test.cpp > $@
+
+# Not a target:
+StudentTest2.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-08 21:36:07.807005405
+#  File has been updated.
+#  Successfully updated.
+
+tidy:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 41):
+	clang-tidy $(SOURCES) $(TIDY_FLAGS) --
+
+# Not a target:
+objects/Duke.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+clean:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 47):
+	rm -f $(OBJECTS) *.o test* 
+	rm -f StudentTest*.cpp
+
+valgrind: test
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 44):
+	valgrind --tool=memcheck $(VALGRIND_FLAGS) ./test 2>&1 | { egrep "lost| at " || true; }
+
+# Not a target:
+StudentTest3.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+objects/Assassin.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+objects/Game.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+objects/Contessa.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+objects/Player.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+objects/Captain.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+StudentTest3.cpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 38):
+	curl https://raw.githubusercontent.com/BenjaminSaldman/coup-a/main/Test.cpp > $@
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+StudentTest1.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+all:
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has not been updated.
+
+run: test
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+test: TestRunner.o StudentTest1.o StudentTest2.o StudentTest3.o objects/Ambassador.o objects/Assassin.o objects/Captain.o objects/Contessa.o objects/Duke.o objects/Game.o objects/Player.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 20):
+	$(CXX) $(CXXFLAGS) $^ -o $@
+
+StudentTest1.cpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 30):
+	curl https://raw.githubusercontent.com/RazGavrieli/Board-Game-Coup/master/Test.cpp > $@
+
+# Not a target:
+TestRunner.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+objects/Ambassador.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=23/1024=2%, Rehash=0, Collisions=0/47=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 62 / storage = 767 B / avg = 12 B
+# current buf: size = 8162 B / used = 767 B / count = 62 / avg = 12 B
+
+# strcache performance: lookups = 94 / hit rate = 34%
+# hash-table stats:
+# Load=62/8192=1%, Rehash=0, Collisions=0/94=0%
+# Finished Make data base on Sun May  8 21:47:01 2022
+
+ 

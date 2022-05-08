@@ -14,3 +14,6 @@ void coup::Assassin::coup( Player &p) {
     this->topCommand="coup";
     
 }
+   string Assassin::role()const {
+    return "Assassin";
+}

@@ -14,3 +14,6 @@ void coup::Duke::block( Player &p) {
     this->topCommand="block";
     p.bank+=-2;
 }
+    string Duke::role()const {
+    return "Duke";
+}

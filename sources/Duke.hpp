@@ -16,6 +16,6 @@ namespace coup
         ~Duke();
         void block( Player &p);
         void tax();
-        
+        string role()const;
     };
 }

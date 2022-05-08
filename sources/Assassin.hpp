@@ -16,6 +16,6 @@ namespace coup
         };
         ~Assassin();
         void coup( Player &p);
-        
+        string role()const;
     };
 }

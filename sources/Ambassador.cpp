@@ -17,3 +17,6 @@ using namespace std;
         _g->turn2();
     }
     void Ambassador::block(const Player &p){}
+    string Ambassador::role()const {
+    return "Ambassador";
+}
