@@ -14,10 +14,10 @@ using namespace std;
              throw runtime_error("no");
         }
          if(p.topCommand=="coup"){
-            _g->player.insert(_g->player.begin(), _g->removed_player);
+            p.final_game=true;
         }
          // cout<< p.getName();
-        
+         _g->turn2();
     }
      string Contessa::role()const {
     return "Contessa";

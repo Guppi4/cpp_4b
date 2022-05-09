@@ -10,7 +10,7 @@ void coup::Assassin::coup( Player &p) {
    if(this->bank<3){
             throw runtime_error("no money\n");
         }
-    _g->removePlayer(p);
+     p.final_game=false;
     this->topCommand="coup";
     _g->turn2();
 }

@@ -11,10 +11,13 @@ namespace coup
     class Game
     {
     public:
-        bool startgame; 
+       
         string q;
-        string removed_player;
+        bool startgame;
         vector<string> player;
+        vector<Player*> objekt_players;
+        size_t index;
+       
         Game();
         ~Game();
         void push_to_game(const string &s);

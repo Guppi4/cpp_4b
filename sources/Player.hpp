@@ -19,7 +19,8 @@ namespace coup
         string topCommand;
         int bank;
         Game *_g;
-        
+       
+        bool final_game=false;
         Player(Game& g, const string &n);
         
         ~Player();
@@ -27,7 +28,7 @@ namespace coup
         void income();
         void foreign_aid();
         string getName() const;
-        void coup(Player & p) const;
+        void coup(Player & p) ;
         string role()const ;
     };
 }

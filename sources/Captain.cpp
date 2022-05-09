@@ -27,9 +27,7 @@ using namespace std;
     {
         throw std::runtime_error("not turn");
     }
-    if (!std::count(this->_g->player.begin(), this->_g->player.end(), p._n)) {
-       throw std::runtime_error("not turn");
-    }
+    
     }
    string Captain::role()const {
     return "Captain";
