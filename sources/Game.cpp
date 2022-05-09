@@ -9,7 +9,9 @@ using namespace coup;
 using namespace std;
 
 
-    Game::Game() {}
+    Game::Game() {
+        this->startgame=false;;
+    }
     Game::~Game() {}
     string Game::turn()
     {
@@ -35,7 +37,9 @@ using namespace std;
     }
      string Game::winner() const
     {
-        
+         if (this->startgame==false){
+            throw std::runtime_error("not winner");
+        }
         return this->player.at(0);
     }
    void coup::Game::push_to_game(const string &s){

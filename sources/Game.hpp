@@ -11,6 +11,7 @@ namespace coup
     class Game
     {
     public:
+        bool startgame; 
         string q;
         string removed_player;
         vector<string> player;

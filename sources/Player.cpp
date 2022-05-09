@@ -11,6 +11,9 @@ Player::Player(Game &g,const string &n)
     if(g.player.size()>=MAX_G){
          throw std::runtime_error("no space");
     }
+    if(g.player.size()==2){
+        g.startgame=true;
+    }
     this->_g = &g;
     this->_n = n;
     this->_g->push_to_game(n);
@@ -71,7 +74,7 @@ void Player::coup(Player &p) const
 
     _g->removePlayer(p);
 
-   ///game->nextTurn();
+     p.topCommand="coup";
 }
 string Player::role()const {
     return typeid(*this).name();

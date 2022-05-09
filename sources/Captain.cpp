@@ -18,7 +18,19 @@ using namespace std;
              _g->turn2();
         }
     }
-    void coup::Captain::block(Player &p){}
+    void coup::Captain::block(Player &p){
+           
+            if (p.role() != "Captain" || p.topCommand != "steal"){
+            throw std::runtime_error("not block");
+        }
+           if (this->_n != this->_g->turn())
+    {
+        throw std::runtime_error("not turn");
+    }
+    if (!std::count(this->_g->player.begin(), this->_g->player.end(), p._n)) {
+       throw std::runtime_error("not turn");
+    }
+    }
    string Captain::role()const {
     return "Captain";
 }
