@@ -17,6 +17,7 @@ namespace coup
         string _n;
         string clas1;
         string topCommand;
+        string couplast;
         int bank;
         Game *_g;
        

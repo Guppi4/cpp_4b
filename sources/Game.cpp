@@ -11,6 +11,7 @@ using namespace std;
 Game::Game()
 {
     index = 0;
+    this->startgame=false;
 }
 Game::~Game() {}
 string Game::turn()

@@ -12,6 +12,7 @@ void coup::Assassin::coup( Player &p) {
         }
      p.final_game=false;
     this->topCommand="coup";
+    this->couplast=p._n;
     _g->turn2();
 }
    string Assassin::role()const {
