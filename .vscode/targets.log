@@ -1,12 +1,18 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: *** No rule to make target 'all'.  Stop.
+
 # GNU Make 4.3
+ 
 # Built for x86_64-pc-linux-gnu
+ 
 # Copyright (C) 1988-2020 Free Software Foundation, Inc.
+ 
 # License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+ 
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon May  9 21:07:40 2022
+# Make data base, printed on Mon May  9 23:57:19 2022
 
 # Variables
 
@@ -23,7 +29,7 @@ SNAP_INSTANCE_KEY =
 # environment
 GJS_DEBUG_OUTPUT = stderr
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-0bc1d817-2c1d-4345-8bb7-ea68b7dc9f93.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-08a3a299-ed33-445e-a374-86be467c9fdc.sock
 # environment
 VSCODE_CWD = /home/kirill
 # default
@@ -103,7 +109,7 @@ SNAP_REEXEC =
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 49490
+VSCODE_PID = 59056
 # environment
 XDG_SESSION_TYPE = wayland
 # automatic
@@ -213,7 +219,7 @@ SNAP_CONTEXT = VYapbnRLuMpWByPxPLxm_RIx4Dbgt1U1ctIMcCm7dY54cgKISHtT
 # environment
 MANAGERPID = 1259
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 49445
+GIO_LAUNCHED_DESKTOP_FILE_PID = 59012
 # environment
 _ = /snap/code/95/usr/share/code/code
 # environment
@@ -282,14 +288,12 @@ SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd
 # No pattern-specific variable values.
 
 # Directories
-
  
-make: *** No rule to make target 'all'.  Stop.
 
-# . (device 2051, inode 1836003): 19 files, no impossibilities.
+# . (device 2051, inode 1836003): 11 files, no impossibilities.
 # sources (device 2051, inode 1859104): 18 files, no impossibilities.
 
-# 37 files, no impossibilities in 2 directories.
+# 29 files, no impossibilities in 2 directories.
 
 # Implicit Rules
 
@@ -456,9 +460,9 @@ objects/Ambassador.o:
 # strcache buffers: 1 (0) / strings = 62 / storage = 767 B / avg = 12 B
 # current buf: size = 8162 B / used = 767 B / count = 62 / avg = 12 B
 
-# strcache performance: lookups = 94 / hit rate = 34%
+# strcache performance: lookups = 86 / hit rate = 27%
 # hash-table stats:
-# Load=62/8192=1%, Rehash=0, Collisions=0/94=0%
-# Finished Make data base on Mon May  9 21:07:40 2022
+# Load=62/8192=1%, Rehash=0, Collisions=0/86=0%
+# Finished Make data base on Mon May  9 23:57:19 2022
 
  

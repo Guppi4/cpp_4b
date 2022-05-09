@@ -11,10 +11,14 @@ using namespace std;
 
     Ambassador::~Ambassador(){}
     void Ambassador::transfer( Player &from,Player &to){
+        if (this->_n != this->_g->turn())
+    {
+        throw std::runtime_error("noot turn");
+    }  
         from.bank+=-1;
         to.bank+=1;
         this->topCommand="transfer";   
-        _g->turn2();
+        this->_g->turn2();
     }
     void Ambassador::block(const Player &p){}
     string Ambassador::role()const {

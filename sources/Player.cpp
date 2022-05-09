@@ -87,8 +87,22 @@ string coup::Player::getName() const
 }
 void Player::coup(Player &p) 
 {
-   
-    if (this->bank < CO1)
+    if (p.final_game==false)
+    {
+        throw std::runtime_error("no00t turn");
+    }
+     int i=0;
+    for (string s: p._g->players())
+    {
+        
+        if (p._n == s)
+        {
+        break;
+            
+        }
+       i++;
+    }
+    if (this->bank < CO1)//pop;
     {
         throw runtime_error("not player turn\n");
     }
@@ -100,7 +114,9 @@ void Player::coup(Player &p)
      this->topCommand="coup"; 
      this->couplast=p._n;
      this->_g->turn2();
+     
      --this->_g->index;
+
 }
 string Player::role()const {
     return typeid(*this).name();
