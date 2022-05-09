@@ -2,11 +2,13 @@
 #include <stdexcept>
 #include <vector>
 #include "Player.hpp"
+#include "Duke.hpp"
 using namespace coup;
 using namespace std;
  const int MIN_G=2;
  const int MAX_G=6;
 const int CO1=6;
+const int MAX_BANK=10;
 Player::Player(Game &g,const string &n)
 {
    
@@ -59,11 +61,17 @@ void coup::Player::income()
     }
     this->topCommand = "income";
     ++this->bank;
-    _g->turn2();
+   this->_g->turn2(this->_n);
+  // cout <<this->_g->index <<"  ";
 }
 
 void coup::Player::foreign_aid()
 {
+     string s=typeid(this).name();
+     if( s=="Duke" && this->bank+3>MAX_BANK){
+         throw std::runtime_error("no00t turn");
+     }
+     
       if (this->final_game==false)
     {
         throw std::runtime_error("no00t turn");
@@ -79,7 +87,7 @@ void coup::Player::foreign_aid()
     }  
     this->topCommand = "foreign_aid";
     this->bank += 2;
-   _g->turn2();
+    this->_g->turn2(this->_n);
 }
 string coup::Player::getName() const
 {
@@ -91,17 +99,8 @@ void Player::coup(Player &p)
     {
         throw std::runtime_error("no00t turn");
     }
-     int i=0;
-    for (string s: p._g->players())
-    {
-        
-        if (p._n == s)
-        {
-        break;
-            
-        }
-       i++;
-    }
+    
+    
     if (this->bank < CO1)//pop;
     {
         throw runtime_error("not player turn\n");
@@ -113,10 +112,9 @@ void Player::coup(Player &p)
      p.topCommand="coup";
      this->topCommand="coup"; 
      this->couplast=p._n;
-     this->_g->turn2();
+     this->_g->turn2(this->_n);
      
-     --this->_g->index;
-
+    
 }
 string Player::role()const {
     return typeid(*this).name();

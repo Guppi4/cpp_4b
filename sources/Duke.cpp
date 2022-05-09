@@ -13,12 +13,12 @@ void coup::Duke::tax() {
         throw std::runtime_error("noot turn");
     }
      this->bank += 3;
-     _g->turn2();
+    this->_g->turn2(this->_n);
 }
 void coup::Duke::block( Player &p) {
     this->topCommand="block";
     p.bank+=-2;
-   _g->turn2();
+  this->_g->turn2(this->_n);
 }
     string Duke::role()const {
     return "Duke";

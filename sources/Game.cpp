@@ -37,12 +37,24 @@ vector<string> Game::players() const
 
     return players;
 }
-void Game::turn2()
+void Game::turn2(string s)
 {
-   if(this->players().size()-1==index){
+ this->index=0;
+   for (string s1 : this->players())
+    {
+       
+        if (s1 == s)
+        {
+           break;
+         
+        }
+        ++this->index;
+    }
+   if(this->players().size()-1==this->index){
      index=index-(this->players().size()-1);
    }
    else{
+   
    ++index;
    }
 }
@@ -52,8 +64,15 @@ string Game::winner() const
     {
         throw std::runtime_error("not winner");
     }
-    
-    return this->players().at(0);
+    int i=this->players().size();
+    if (i<=1)
+    {
+         return this->players().at(0);
+    }
+    else{
+        throw std::runtime_error("not winner");
+    }
+   
 }
 void coup::Game::push_to_game(const string &s)
 {

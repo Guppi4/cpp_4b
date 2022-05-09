@@ -22,7 +22,7 @@ namespace coup
         ~Game();
         void push_to_game(const string &s);
         string turn();
-        void turn2();
+        void turn2(string s);
         vector<string> players() const;
          string winner() const;
          void removePlayer(Player &p);

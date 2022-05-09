@@ -15,15 +15,19 @@ using namespace std;
     }
     
          if (p.coins() ==1){
-             p.bank+=1;
-            this->bank+=-1;  
+             p.bank-=1;
+            this->bank+=1;  
+            this->_g->turn2(this->_n);
+           return;
         }
         
         if (this->topCommand != "block"){
-            p.bank+=2;
-            this->bank+=-2;            
-             _g->turn2();
+            p.bank+=-2;
+            this->bank+=2;            
+             this->_g->turn2(this->_n);
+            return;
         }
+      
     }
     void coup::Captain::block(Player &p){
            

@@ -25,7 +25,7 @@ void coup::Contessa::block(Player &p)
         }
     }
     // cout<< p.getName();
-    _g->turn2();
+    this->_g->turn2(this->_n);
 }
 string Contessa::role() const
 {
