@@ -54,6 +54,7 @@ void coup::Player::income()
     // cout << this->_n <<"_" <<this->_g->turn() <<"\n" ;
     if (this->_n != this->_g->turn())
     {
+       //cout <<this->_n;
         throw std::runtime_error("noot turn");
     }
     this->topCommand = "income";
@@ -91,12 +92,15 @@ void Player::coup(Player &p)
     {
         throw runtime_error("not player turn\n");
     }
+     //cout <<this->_n << " "<<p._n;
      this->bank-=7;
      p.final_game=false;
-     _g->turn2();
+     //_g->turn2();
      p.topCommand="coup";
      this->topCommand="coup"; 
      this->couplast=p._n;
+     this->_g->turn2();
+     --this->_g->index;
 }
 string Player::role()const {
     return typeid(*this).name();
