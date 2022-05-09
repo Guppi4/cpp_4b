@@ -15,7 +15,7 @@ namespace coup
         Ambassador(Game &g,string n): Player(g,n){}
         ~Ambassador();
         void transfer( Player &from,Player &to);
-        void block(const Player &p);
+        void block( Player &p);
         string role()const;
         
 

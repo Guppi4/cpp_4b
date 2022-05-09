@@ -13,7 +13,7 @@ using namespace std;
     {
         throw std::runtime_error("not turn");
     }
-    
+        this->couplast=p._n;
          if (p.coins() ==1){
              p.bank-=1;
             this->bank+=1;  

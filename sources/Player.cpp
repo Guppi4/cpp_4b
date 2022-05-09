@@ -7,7 +7,7 @@ using namespace coup;
 using namespace std;
  const int MIN_G=2;
  const int MAX_G=6;
-const int CO1=6;
+const int CO1=7;
 const int MAX_BANK=10;
 Player::Player(Game &g,const string &n)
 {
@@ -67,10 +67,8 @@ void coup::Player::income()
 
 void coup::Player::foreign_aid()
 {
-     string s=typeid(this).name();
-     if( s=="Duke" && this->bank+3>MAX_BANK){
-         throw std::runtime_error("no00t turn");
-     }
+    
+     
      
       if (this->final_game==false)
     {
@@ -83,7 +81,7 @@ void coup::Player::foreign_aid()
     }
     if (this->_n != this->_g->turn())
     {
-        throw std::runtime_error("noot turn");
+        throw std::runtime_error("noopt turn");
     }  
     this->topCommand = "foreign_aid";
     this->bank += 2;

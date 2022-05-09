@@ -15,17 +15,23 @@ void coup::Contessa::block(Player &p)
     }
     if (p.topCommand == "coup")
     {
+       //
         for (Player *player : p._g->objekt_players)
         {
             if (player->_n== p.couplast)
             {
              player->final_game=true;
+              // cout <<_g->index;
+                // this->_g->turn2(this->_n);
+               
+             //  cout <<_g->index;
+               break;
                 // push to array of string avtive players
             }
         }
     }
     // cout<< p.getName();
-    this->_g->turn2(this->_n);
+  
 }
 string Contessa::role() const
 {

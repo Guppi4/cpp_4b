@@ -17,5 +17,6 @@ namespace coup
         void block( Player &p);
         void tax();
         string role()const;
+         void foreign_aid();
     };
 }
