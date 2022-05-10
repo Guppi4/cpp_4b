@@ -10,6 +10,7 @@ using namespace std;
 
 Game::Game()
 {
+    lastcommand="";
     index = 0;
     this->startgame=false;
 }

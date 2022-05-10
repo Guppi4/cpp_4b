@@ -11,7 +11,7 @@ namespace coup
     class Game
     {
     public:
-       
+        string lastcommand;
         string q;
         bool startgame;
         vector<string> player;

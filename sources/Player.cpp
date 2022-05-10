@@ -74,14 +74,14 @@ void coup::Player::foreign_aid()
     {
         throw std::runtime_error("no00t turn");
     }
-     
+     //this->_g->turn2(this->_n);
       if (this->_g->players().size()<MIN_G || this->_g->players().size()>MAX_G)
     {
         throw std::runtime_error("noaat turn");
     }
     if (this->_n != this->_g->turn())
     {
-        throw std::runtime_error("noopt turn");
+        throw std::runtime_error("noopty turn");
     }  
     this->topCommand = "foreign_aid";
     this->bank += 2;
@@ -114,6 +114,6 @@ void Player::coup(Player &p)
      
     
 }
-string Player::role()const {
+ string Player::role() {
     return typeid(*this).name();
 }

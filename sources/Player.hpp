@@ -30,6 +30,6 @@ namespace coup
         void foreign_aid();
         string getName() const;
         void coup(Player & p) ;
-        string role()const ;
+        virtual string role() ;
     };
 }

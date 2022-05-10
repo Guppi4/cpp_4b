@@ -8,6 +8,7 @@ using namespace coup;
 using namespace std;
 const int MAX_7=7;
 const int MAX_3=3;
+
 coup::Assassin::~Assassin() {}
 void coup::Assassin::coup( Player &p) {
   
@@ -21,6 +22,7 @@ if (p.final_game==false)
             throw runtime_error("no money\n");
         }
      if (this->bank >= MAX_7){
+            coup7=true;
             Player::coup(p);
         return;
         }

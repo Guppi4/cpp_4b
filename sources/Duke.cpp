@@ -15,8 +15,12 @@ void coup::Duke::tax() {
     }
      this->bank += 3;
     this->_g->turn2(this->_n);
+    this->_g->lastcommand="tax";
 }
 void coup::Duke::block( Player &p) {
+   if(p.topCommand=="income"){
+   throw std::runtime_error("nootT turn");
+   }
     this->topCommand="block";
     p.bank+=-2;
   //this->_g->turn2(this->_n);
